@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Create Your Character</h1>
+      <div class="star"></div>
+      <section class="background-stuff">
+        <div class="eggShape"></div>
+        <img src="random-shapes/blob.svg" class="blobOne" alt="" />
+        <img src="random-shapes/blob-02.svg" class="blobTwo" alt="" />
+        <img src="random-shapes/blob-03.svg" class="blobThree" alt="" />
+        <div class="circle"></div>
+        <img src="random-shapes/blob-4.svg" class="blobFour" alt="" />
+      </section>
+      <section class="main">
+        <section class="character-form formBoxStyle layoutOfBoxes">
+          <label for="characterName">choose a name</label>
+          <input type="text" id="characterName" name="name" />
+          <label for="characterGender">gender</label>
+          <select name="gender" id="characterGender">
+            <option class="gender" value="female">Úrhölgy</option>
+            <option class="gender" value="male">Úr</option>
+          </select>
+          <label for="characterRace">race</label>
+          <select name="race" id="characterRace">
+            <option value="tunderke">tündérke</option>
+            <option value="robot">robot</option>
+            <option value="eger">házi egér</option>
+            <option value="ember">ember</option>
+            <option value="rem">rém</option>
+          </select>
+          <label for="characterClass">class</label>
+          <select name="class" id="characterClass">
+            <option value="uralkodo">uralkodó</option>
+            <option value="foispan">főispán</option>
+            <option value="saman">sámán</option>
+            <option value="betyar">betyár</option>
+            <option value="muvesz">művész</option>
+          </select>
+        </section>
+        <section class="character-sheet sheetBoxStyle layoutOfBoxes">
+          <h2>Your Character</h2>
+          <p id="characterNameValue">name:</p>
+          <p id="characterGenderValue">
+            gender:
+            <img
+              src="icons/icons8-female-96.png"
+              id="genderIcon"
+              class="smallIcon"
+              alt=""
+            />
+          </p>
+          <p id="characterRaceValue">
+            race:
+            <img
+              src="icons/icons8-fantasy-96.png"
+              class="smallIcon"
+              id="raceIcon"
+              alt=""
+            />
+          </p>
+          <p id="characterClassValue">
+            class:
+            <img
+              src="icons/icons8-crown-96.png"
+              class="smallIcon"
+              id="classIcon"
+              alt=""
+            />
+          </p>
+        </section>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
